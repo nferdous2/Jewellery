@@ -20,7 +20,7 @@ const AddProduct = () => {
     return (
         <div id='addProduct'>
             <form className='purchase-bg text-white' onSubmit={handleSubmit(onSubmit)}>
-                <h2 data-aos="flip-right" data-aos-duration="1200">Add a Product</h2>
+                <h2 data-aos="flip-right" data-aos-duration="1200"> Add <span className='heading'>A</span> Product</h2>
                 <input {...register("pic")} placeholder="Product Img Url" required data-aos="zoom-in-right" data-aos-duration="3000" />
                 <input {...register("name", { required: true, maxLength: 20 })} placeholder='Name' required data-aos="zoom-in-right" data-aos-duration="3000" />
                 <input {...register("price")} placeholder="Price" required data-aos="zoom-in-right" data-aos-duration="3000" />

@@ -11,3 +11,11 @@
 .dash-container{
     background-color: rgb(23, 26, 25);
 }
+.iconsS{
+    color: rgb(226, 132, 25);
+    justify-content: center;
+    margin:auto;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 30px;
+}
