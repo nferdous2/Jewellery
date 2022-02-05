@@ -1,0 +1,36 @@
+
+.p-text{
+    font-weight: 100;
+}
+.navbar-style{
+    background-color: rgb(3, 17, 26);
+    font-family:initial;   
+     font-weight: 600;
+    padding: 3px;
+
+}
+.navs{
+    color: rgb(221, 27, 156);
+
+}
+.navs-h{
+font-family:cursive;
+color: #e7e5e2;
+}
+
+.nav-link{
+    color: #b3760f;
+ margin: 5px 5px;
+    border: none;
+    outline: none;
+} 
+.nav-link:hover{
+    /* color: #fff;
+    padding: 5px 10px;
+    background-color: #e0e1fd;
+    border-radius: 15px 5px;
+    margin: 5px 10px;
+    color: rgb(22, 21, 21);
+    border: none;
+    outline: none */
+}

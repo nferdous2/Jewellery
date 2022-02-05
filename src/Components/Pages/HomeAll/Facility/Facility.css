@@ -1,0 +1,27 @@
+.facility-body {
+    color: aliceblue;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 10px;
+    font-family:cursive;
+text-align: center;
+
+}
+.icons-f{
+    color: rgb(243, 248, 252);
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(175, 103, 10, 0.815);
+    border-radius: 5px;
+    font-size: 50px;
+}
+.facility-div{
+    box-sizing: border-box;
+}
+.facility-div:hover{
+    color: rgb(194, 148, 20);
+    font-weight: 700;
+  transform: scale(1.1);
+  transition: transform 2s ease-in-out;
+}

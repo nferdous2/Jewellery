@@ -1,0 +1,22 @@
+.reg-bg{
+    overflow: hidden;
+          height: 501 px;
+            background-color: black;
+            padding: 5px;
+          background-repeat: no-repeat;
+          color: rgb(190, 124, 24);
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          background-size: cover;
+        background-image: url(../../../../Images/dow.jpg)
+}
+
+    form{
+    background: rgba(30, 29, 36, 0.603);
+    }
+    .form-container{
+    border-radius: 10px;
+    padding: 30px;
+    }
+    .form-control{
+        width: 75%;
+    }

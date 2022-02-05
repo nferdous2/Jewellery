@@ -1,0 +1,102 @@
+.home-bg{
+    background-color: rgb(24, 23, 23);
+  }
+  
+  .banner_section {
+     border-bottom: 1px solid #ebebeb;
+     margin-bottom: 40px;    
+   }
+   .banner_black {
+     border-bottom: 2px solid #a8741a;
+   }
+   
+   .banner_black .banner_content {
+     transition: 0.5s;
+     bottom: 110px;
+     top: inherit;
+   }
+ 
+   .banner_black .banner_content h4 {
+     color: #a8741a;
+     font-weight: 800;
+     font-family: "Baloo 2", serif;
+   }
+   
+   .banner_black .banner_content h3{
+     color: rgb(133, 31, 82);
+   }
+   
+   .banner_black .bannerBody:hover .banner_content {
+     transform: scale(1.1);
+ 
+   }
+   
+   .bannerBody {
+     position: relative;
+     overflow: hidden;
+     height: 100%; 
+   }
+   
+   .bannerBody::before {
+     position: absolute;
+     content: "";
+      top: 0;
+     left: 0;
+     transition: 0.5s;
+     opacity: 0.3;
+     z-index: 1;
+   } 
+   
+   .bannerBody img {
+     transition: 0.3s;
+     height: 10%;
+   }
+   
+   .bannerBody:hover::before {
+     opacity: 0.1;
+   }
+   
+   .bannerBody:hover img {
+     transform: scale(1.1);
+   }
+   
+   .banner_black .bannerBody:hover .banner_content {
+     transform: scale(1.1);
+   }
+   .banner_content {
+     position: relative;
+     top: 25px;
+     left: 15px;
+   }
+  .bannerPart{
+    height: 620%;
+ 
+  }
+  .colorText{
+   color: goldenrod;
+ }
+ .text{
+   color: rgb(166, 247, 247);
+ }
+ /* banner */
+ 
+ 
+ .bannerAdd {
+   height: 510px;
+ }
+ .addText{
+   text-align: center;
+   font-size: 16px;
+   margin: 0;
+ }
+ /* clients */
+ .carousel-inner{
+   width: 60%;
+   height: 30%;
+   align-items: center;
+   justify-content: center;
+   margin-left: 10%;
+ }
+ .slides{
+   margin-left: 25%;
+ }

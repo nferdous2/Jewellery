@@ -1,0 +1,18 @@
+/* .banner-bg{
+          overflow: hidden;
+          height: 500px;
+          background-color: black;
+          background-size: cover;
+        background-image: url(../../../Images/b2.jpg);
+color: aliceblue;
+} */
+/* .img-1{
+} */
+.banner-img{
+  margin-right: 10%;
+  margin-top: 10%;
+}
+.banner-section{
+  overflow: hidden;
+
+}

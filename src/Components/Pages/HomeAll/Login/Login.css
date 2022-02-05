@@ -1,0 +1,21 @@
+.login-bg{
+    overflow: hidden;
+          height: 500px;
+          background-color: black;
+          color: rgb(190, 124, 24);
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          background-size: cover;
+        background-image: url(../../../../Images/lg1.jpg);
+}
+
+    form{
+    background: rgba(30, 29, 36, 0.603);
+    }
+    /* set padding and size of th form */
+    .form-container{
+    border-radius: 10px;
+    padding: 30px;
+    }
+    .form-control{
+        width: 75%;
+    }
