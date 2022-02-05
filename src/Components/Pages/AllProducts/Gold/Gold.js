@@ -6,7 +6,7 @@ import Product from '../../HomeAll/Product/Product';
 const Gold = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:8000/gold')
+        fetch('/gold')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])

@@ -8,7 +8,7 @@ const Orders = ({ order }) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure ,you want to delete');
         if (proceed) {
-            const url = `http://localhost:8000/orders/${id}`;
+            const url = `https://glacial-refuge-18418.herokuapp.com/orders/${id}`;
             fetch(url, {
                 mathod: 'DELETE'
             })

@@ -1,4 +1,4 @@
-import { faHeart, faSimCard } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
 import React from 'react';
@@ -9,7 +9,7 @@ const AddReview = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:8000/review', data)
+        axios.post('https://glacial-refuge-18418.herokuapp.com/review', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Product added successfully');

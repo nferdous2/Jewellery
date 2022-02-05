@@ -7,14 +7,14 @@ const PurchasePage = () => {
     const [product, setProduct] = useState([]);
     const { serviceId } = useParams();
     useEffect(() => {
-        fetch(`http://localhost:8000/orders/${serviceId}`)
+        fetch(`https://glacial-refuge-18418.herokuapp.com/orders/${serviceId}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [serviceId])
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:8000/orders', data)
+        axios.post('https://glacial-refuge-18418.herokuapp.com/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added successfully')
