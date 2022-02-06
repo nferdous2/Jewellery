@@ -10,9 +10,6 @@
         background-image: url(../../../../Images/dow.jpg)
 }
 
-    form{
-    background: rgba(30, 29, 36, 0.603);
-    }
     .form-container{
     border-radius: 10px;
     padding: 30px;
@@ -20,3 +17,11 @@
     .form-control{
         width: 75%;
     }
+    .login-page{
+      background: rgba(30, 29, 36, 0.603);
+      text-align: center;
+      justify-content: center;
+      margin: auto;
+      box-sizing: border-box;
+      box-shadow: 0px 0px 10px gray;
+  }

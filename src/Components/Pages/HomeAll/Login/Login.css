@@ -7,15 +7,19 @@
           background-size: cover;
         background-image: url(../../../../Images/lg1.jpg);
 }
-
-    form{
-    background: rgba(30, 29, 36, 0.603);
-    }
     /* set padding and size of th form */
     .form-container{
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
     }
     .form-control{
-        width: 75%;
+        width: 100%;
+    }
+    .login-page{
+        background: rgba(30, 29, 36, 0.603);
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 10px gray;
     }
