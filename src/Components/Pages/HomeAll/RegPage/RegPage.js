@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../../../hooks/useAuth';
-// import { useLocation, useNavigate } from 'react-router-dom';
-// import useAuth from '../../../../hooks/useAuth';
 import './RegPage.css';
 const RegPage = () => {
     const [loginData, setLoginData] = useState({});

@@ -5,14 +5,14 @@ import React from 'react';
 import './Footer.css'
 const Footer = () => {
     return (
-        <div className='footer'>
-            <div className='row'>
+        <div className='footer p-2'>
+            <div className='row' data-aos="zoom-in-down" data-aos-duration="3000" >
                 <div className="col-md-3">
-                    <h3>Decore 'n crafts</h3>
-                    <p>We are happy in your satisfaction</p>
+                    <h3 className='text-uppercase'>NF Jwellery</h3>
+                    <p className='text-white'>Every pice of jwellery tells a story</p>
                     <p className='mt-5'>
                         <h5 className='text-uppercase'><i className="fas fa-search-location me-2"></i>Our Office</h5>
-                        <address> <FontAwesomeIcon icon={faLocationArrow}></FontAwesomeIcon>Syhlet</address>
+                        <address className='text-white'> <FontAwesomeIcon className="icons" icon={faLocationArrow}></FontAwesomeIcon>Syhlet</address>
                     </p>
                 </div>
                 <div className="col-md-3">
@@ -49,6 +49,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+
     );
 };
 

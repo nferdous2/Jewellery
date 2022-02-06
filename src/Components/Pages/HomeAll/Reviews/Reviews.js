@@ -4,7 +4,7 @@ const Reviews = ({ review }) => {
     const { name, opinion, img } = review;
     return (
         <div>
-            <Col className='h-100'>
+            <Col className="services">
                 <Card className="service-style" data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine" data-aos-duration="2000">

@@ -7,10 +7,9 @@ import b9 from '../../../Images/b9.jpg';
 import Facility from '../HomeAll/Facility/Facility';
 import Deals from '../HomeAll/Deals/Deals';
 import './Home.css';
-import { Card } from 'react-bootstrap';
+import { Card, CardGroup } from 'react-bootstrap';
 import Products from '../HomeAll/Products/Products';
 import Review from '../HomeAll/Review/Review';
-// import Products from '../HomeAll/Products/Products';
 const Home = () => {
     return (
 
@@ -18,55 +17,42 @@ const Home = () => {
             {/* banner section */}
             <Banner />
             {/* post banner */}
-            <section className="banner-section banner_black mt-4 ">
+            <section className="banner-section banner-f mt-4 ">
                 <h3 className='text-white text-center m-3'><span className='heading'>R</span>ecent <span className='heading'>O</span>ffers</h3>
-                <div className="container">
-                    <div className="row" >
-                        <div className="col-12 col-lg-4 col-md-4" data-aos="fade-down"
-                            data-aos-easing="linear"
-                            data-aos-duration="1500" >
-                            <div className="bannerPart">
-                                <div className="bannerBody">
-                                    <img src={b3} alt="" className='w-75' />
-                                    <div className="banner_content fs-6 text-white">
-                                        <h3>New Design</h3>
-                                        <h4>Small design Rings</h4>
-                                        <span>Sale 40% </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-12 col-lg-4 col-md-4" data-aos="fade-up"
-                            data-aos-duration="3000">
-                            <div className="bannerPart">
-                                <div className="bannerBody">
-                                    <img src={b5} alt="" className='w-75' />
-
-                                    <div className="banner_content fs-6 text-white">
-                                        <h3>Bestselling necklace</h3>
-                                        <h4>White gold necklace</h4>
-                                        <span>Sale 10% </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-12 col-lg-4 col-md-4" data-aos="fade-down"
-                            data-aos-easing="linear"
-                            data-aos-duration="1500">
-                            <div className="bannerPart">
-                                <div className="bannerBody">
-                                    <img src={b6} alt="" className='w-75' />
-
-                                    <div className="banner_content fs-6 text-white">
-                                        <h3>Featured Necklace</h3>
-                                        <h4>Platinium Rings</h4>
-                                        <span>Sale 30% </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <CardGroup xs={1} md={3} className="g-4 p-3" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                    <Card className="bannerPart">
+                        <Card.Body className="bannerBody ">
+                            <Card.Img variant="top" className='bannerBodyImg' src={b3} />
+                            <Card.Text className="banner-inside fs-6 text-white">
+                                <h3>New Design</h3>
+                                <h4>Small design Rings</h4>
+                                <span>Sale 40% </span>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className="bannerPart">
+                        <Card.Body className="bannerBody">
+                            <Card.Img variant="top" className='bannerBodyImg' src={b5} />
+                            <Card.Text className="banner-inside fs-6 text-white">
+                                <h3>Bestselling necklace</h3>
+                                <h4>White gold necklace</h4>
+                                <span>Sale 10% </span>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className="bannerPart">
+                        <Card.Body className="bannerBody">
+                            <Card.Img variant="top" className='bannerBodyImg' src={b6} />
+                            <Card.Text className="banner-inside fs-6 text-white">
+                                <h3>Featured Necklace</h3>
+                                <h4>Platinium Rings</h4>
+                                <span>Sale 30% </span>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </CardGroup>
             </section>
             {/* Facility */}
             <Facility />

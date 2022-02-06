@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Carousel } from 'react-bootstrap';
 import './Deals.css';
 import wd1 from '../../../../Images/wd1.jpg'
 import wd2 from '../../../../Images/wd2.jpg'

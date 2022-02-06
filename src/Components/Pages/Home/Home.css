@@ -1,76 +1,72 @@
 .home-bg{
     background-color: rgb(24, 23, 23);
   }
-  
+  .baa{
+    background-color: rgb(24, 23, 23);
+
+  }
   .banner_section {
      border-bottom: 1px solid #ebebeb;
      margin-bottom: 40px;    
    }
-   .banner_black {
+   .banner-f {
      border-bottom: 2px solid #a8741a;
    }
    
-   .banner_black .banner_content {
+   .banner-f .banner-inside {
      transition: 0.5s;
      bottom: 110px;
      top: inherit;
    }
- 
-   .banner_black .banner_content h4 {
+   .banner-f .banner-inside h4 {
      color: #a8741a;
      font-weight: 800;
-     font-family: "Baloo 2", serif;
+     font-family: cursive;
    }
-   
-   .banner_black .banner_content h3{
+   .banner-f .banner-inside h3{
      color: rgb(133, 31, 82);
    }
    
-   .banner_black .bannerBody:hover .banner_content {
+   .banner-f .bannerBody:hover .banner-inside {
      transform: scale(1.1);
  
    }
-   
    .bannerBody {
      position: relative;
      overflow: hidden;
      height: 100%; 
+     background-color: rgb(24, 23, 23);
+
    }
-   
    .bannerBody::before {
      position: absolute;
      content: "";
       top: 0;
      left: 0;
-     transition: 0.5s;
-     opacity: 0.3;
-     z-index: 1;
+     transition: 0.6s;
    } 
-   
-   .bannerBody img {
-     transition: 0.3s;
-     height: 10%;
+   .bannerBodyImg{
+    transition: 0.4s;
+    opacity: 0.8;
+     width: 75%;
    }
-   
-   .bannerBody:hover::before {
-     opacity: 0.1;
-   }
-   
+   .bannerBody:hover .bannerBodyImg{
+    opacity: 0.5;
+   }   
    .bannerBody:hover img {
      transform: scale(1.1);
    }
-   
-   .banner_black .bannerBody:hover .banner_content {
+   .banner-f .bannerBody:hover .banner-inside {
      transform: scale(1.1);
    }
-   .banner_content {
+   .banner-inside {
      position: relative;
      top: 25px;
      left: 15px;
    }
   .bannerPart{
     height: 620%;
- 
+    background-color: rgb(24, 23, 23);
   }
   .colorText{
    color: goldenrod;
@@ -88,6 +84,8 @@
    text-align: center;
    font-size: 16px;
    margin: 0;
+   font-family:cursive;
+
  }
  /* clients */
  .carousel-inner{
