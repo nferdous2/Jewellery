@@ -16,6 +16,7 @@ import RegPage from './Components/Pages/HomeAll/RegPage/RegPage';
 import Login from './Components/Pages/HomeAll/Login/Login';
 import DashboardBody from './Components/Dashboard/DashboardBody/DashboardBody';
 import AuthProvider from './Contexts/AuthProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 function App() {
   return (
 
@@ -33,12 +34,12 @@ function App() {
             <Route path="/allProducts">
               <AllProduct />
             </Route>
-            <Route path="/myOrder">
+            <PrivateRoute path="/myOrder">
               <MyOrder />
-            </Route>
-            <Route path="/purchase/:serviceId">
+            </PrivateRoute>
+            <PrivateRoute path="/purchase/:serviceId">
               <PurchasePage />
-            </Route>
+            </PrivateRoute>
             <Route path="/gold">
               <Gold />
             </Route>
@@ -65,22 +66,6 @@ function App() {
 
         </BrowserRouter>
       </AuthProvider>
-      {/* <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
-
-        </Switch>
-        <Footer />
-      </Router> */}
     </div>
   );
 }
