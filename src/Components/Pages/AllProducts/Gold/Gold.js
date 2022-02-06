@@ -6,7 +6,7 @@ import Product from '../../HomeAll/Product/Product';
 const Gold = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/gold')
+        fetch('https://glacial-refuge-18418.herokuapp.com/gold')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])

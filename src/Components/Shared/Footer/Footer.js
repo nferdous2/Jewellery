@@ -12,7 +12,7 @@ const Footer = () => {
                     <p className='text-white'>Every pice of jwellery tells a story</p>
                     <p className='mt-5'>
                         <h5 className='text-uppercase'><i className="fas fa-search-location me-2"></i>Our Office</h5>
-                        <address className='text-white'> <FontAwesomeIcon className="icons" icon={faLocationArrow}></FontAwesomeIcon>Syhlet</address>
+                        <address className='text-white'> <FontAwesomeIcon style={{ color: '#b3760f' }} icon={faLocationArrow}></FontAwesomeIcon>Syhlet</address>
                     </p>
                 </div>
                 <div className="col-md-3">

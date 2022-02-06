@@ -15,7 +15,7 @@ const Product = ({ product }) => {
                     <Card.Img className='collection-img mb-3' variant="top" src={pic} />
                     <Card.Body className='infos'>
                         <Card.Title className='infos-Text' >{name}</Card.Title>
-                        <Card.Text>Price: {price} $
+                        <Card.Text>Price: {price} BDT
                         </Card.Text>
                         <NavLink to={`/purchase/${_id}`} ><Button className="btn-allP">Buy now</Button></NavLink>
                     </Card.Body>

@@ -21,11 +21,10 @@ background-color: rgba(1, 5, 10, 0.76);
 .icons{
     justify-content: center;
     align-items: center;
-    margin-left:6%;
-    padding: 2px;
-    border-radius: 5px;
-    color: rgb(209, 144, 4);
-    font-size: 30px;
+    margin-left:13%;
+    padding: 4px;
+    color: #d19004;
+    font-size: 35px;
 }
 .icons:hover{
     color:rgb(245, 239, 241)

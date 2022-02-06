@@ -1,14 +1,6 @@
 .banner-bg{
           overflow: hidden;
-          height: 500px;
           font-family:cursive;
-
           background-color: black;
-          background-size: cover;
-        background-image: url(../../../Images/b2.jpg);
 color: aliceblue;
-}
-.banner-img{
-  margin-right: 10%;
-  margin-top: 10%;
 }

@@ -14,7 +14,7 @@ const Deals = () => {
                 <img
                     src={wd1}
                     class="w-100 h-100 rounded"
-                    alt="Boat on Calm Water"
+                    alt=""
                 />
                 <div className=" fs-6 img-text ">
                     <h3 className='img-h'>Sea stone jwelerry</h3>
@@ -32,7 +32,7 @@ const Deals = () => {
 
                     />
                     <div className=" fs-6 img-text text-white">
-                        <h5 className='img-h'>Watch formen</h5>
+                        <h5 className='img-h'>Watch for men</h5>
                         <h5>Best Brands</h5>
 
                     </div>
@@ -55,7 +55,7 @@ const Deals = () => {
                 data-aos-duration="2000">
                 <img
                     src={wd4} class="w-100 h-75  rounded"
-                    alt="Mountains in the Clouds"
+                    alt=""
                 />
                 <div className=" fs-6 img-text">
                     <h3 className='img-h'>Gifts</h3>

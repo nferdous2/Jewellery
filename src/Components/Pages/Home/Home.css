@@ -80,6 +80,14 @@
  .bannerAdd {
    height: 510px;
  }
+ @media (max-width: 480px) {
+  .bannerAdd{
+    height: 250px;
+
+  }
+}
+  
+
  .addText{
    text-align: center;
    font-size: 16px;
