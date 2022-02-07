@@ -30,7 +30,7 @@ const PurchasePage = () => {
                 <h2 data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine" data-aos-duration="2000">Place your order</h2>
-                <input {...register("productName")} value={product.name} defaultValue={serviceId} />
+                <input {...register("productId")} value={product.name} defaultValue={serviceId} />
                 <input {...register("price")} placeholder="Price" required />
                 <input {...register("name", { required: true, maxLength: 20 })} placeholder='Name' required />
                 <input {...register("address")} placeholder="Address" required />

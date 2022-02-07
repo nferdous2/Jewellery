@@ -12,7 +12,7 @@ const AddReview = () => {
         axios.post('https://glacial-refuge-18418.herokuapp.com/review', data)
             .then(res => {
                 if (res.data.insertedId) {
-                    alert('Product added successfully');
+                    alert('Review added successfully');
                     reset();
                 }
             })

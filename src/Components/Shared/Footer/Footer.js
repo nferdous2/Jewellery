@@ -8,8 +8,8 @@ const Footer = () => {
         <div className='footer p-2'>
             <div className='row' data-aos="zoom-in-down" data-aos-duration="3000" >
                 <div className="col-md-3">
-                    <h3 className='text-uppercase'>NF Jwellery</h3>
-                    <p className='text-white'>Every pice of jwellery tells a story</p>
+                    <h3 className='text-uppercase'>NF Jewellery</h3>
+                    <p className='text-white'>Every pice of jewellery tells a story</p>
                     <p className='mt-5'>
                         <h5 className='text-uppercase'><i className="fas fa-search-location me-2"></i>Our Office</h5>
                         <address className='text-white'> <FontAwesomeIcon style={{ color: '#b3760f' }} icon={faLocationArrow}></FontAwesomeIcon>Syhlet</address>

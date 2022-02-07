@@ -11,7 +11,7 @@ const MyOrder = () => {
 
     return (
         <div id="myOrder">
-            <h2 className='text-center heading'>Your Orders</h2>
+            <h2 className='text-center text-white'><span className="heading">Your</span> Orders</h2>
             <Row xs={1} sm={8} md={3} className="gx-4 text-white gy-5 px-5">
                 {
 

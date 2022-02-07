@@ -1,28 +1,26 @@
 import React, { useState } from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 const Orders = ({ order }) => {
-    const [product, setProduct] = useState([]);
+    // const [orders, setProduct] = useState([]);
+    const [orders, setOrders] = useState([])
 
-    const { name, price, address, phone, email } = order;
+    const { name, price, address, phone, email, productId } = order;
     //DELETE A product
     const handleDelete = id => {
-        const proceed = window.confirm('Are you sure ,you want to delete');
+        const proceed = window.confirm('Are you sure to delete order?')
         if (proceed) {
-            const url = `https://glacial-refuge-18418.herokuapp.com/orders/${id}`;
-            fetch(url, {
-                mathod: 'DELETE'
-            })
-                .then(res => res.json())
+            fetch(`https://glacial-refuge-18418.herokuapp.com/orders/${id}`, {
+                method: 'DELETE'
+            }).then(res => res.json())
                 .then(data => {
                     if (data.deletedCount > 0) {
-                        alert('Deleted Sucessfully');
-                        const remainingProducts = product.filter(user => user._id !== id);
-                        setProduct(remainingProducts);
+                        alert('Deleted Successfully ')
+                        const leftOrders = orders.filter(order => order._id !== id)
+                        setOrders(leftOrders)
                     }
                 })
         }
     }
-    console.log(product)
     return (
         <Col>
             <Card className="mb-4 p-2 " data-aos="flip-left"
@@ -30,12 +28,13 @@ const Orders = ({ order }) => {
                 data-aos-duration="2000">
 
                 <Card.Body className='service-style'>
-                    <Card.Title>Name:{name}</Card.Title>
-                    <Card.Text> Price:{price}</Card.Text>
-                    <Card.Text>Address:{address} </Card.Text>
-                    <Card.Text>Phone:{phone}</Card.Text>
-                    <Card.Text>Email:{email}</Card.Text>
-                    <Button onClick={handleDelete} className='btn-allP'>Remove</Button>
+                    <Card.Title className='order-text'><span className="heading">Product Id: </span>{productId}</Card.Title>
+                    <Card.Title className='order-text'><span className="heading">Customer Name: </span>{name}</Card.Title>
+                    <Card.Text className='order-text'><span className="heading">Price: </span>{price}</Card.Text>
+                    <Card.Text className='order-text'><span className="heading">Address: </span>{address}</Card.Text>
+                    <Card.Text className='order-text'><span className="heading">Phone: </span>{phone}</Card.Text>
+                    <Card.Text className='order-text'><span className="heading">Email: </span>{email}</Card.Text>
+                    <Button onClick={() => handleDelete(order._id)} className='btn-allP'>Remove</Button>
                 </Card.Body>
             </Card>
         </Col>

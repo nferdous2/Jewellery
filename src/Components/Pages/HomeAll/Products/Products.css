@@ -4,7 +4,7 @@
     margin: 5px;
     margin-bottom: 0;
     border: 2px solid #a8741a;;
-    height: 88%; 
+    height: 95%; 
     background-color: rgba(14, 2, 12, 0.952);
 }
 .heading{
@@ -39,4 +39,8 @@ margin-bottom: 2%;
     margin-bottom: 5%;
     background-color: #da9a2d;
     color: rgb(4, 35, 61);
+}
+/* Orders page  texts style */
+.order-text{
+    font-size: small;
 }
