@@ -11,27 +11,27 @@ const DashboardHome = () => {
             <Tab.Container id="left-tabs-example" defaultActiveKey="dash">
                 <Row>
                     <Col sm={3}>
-                        <Nav variant="tabs" className="flex-column">
+                        <Nav className="dash-nav flex-column">
                             <Nav.Item>
-                                <Nav.Link eventKey="dash">DashBoard</Nav.Link>
+                                <Nav.Link className="dash-Items" eventKey="dash">DashBoard</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="addProducts">Add a Product</Nav.Link>
+                                <Nav.Link className="dash-Items" eventKey="addProducts">Add a Product</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="myOrders">Manage Orders</Nav.Link>
+                                <Nav.Link className="dash-Items" eventKey="myOrders">Manage Orders</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="addReview">Add Review</Nav.Link>
+                                <Nav.Link className="dash-Items" eventKey="addReview">Add Review</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="payment">Payment</Nav.Link>
+                                <Nav.Link className="dash-Items" eventKey="payment">Payment</Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </Col>
                     <Col sm={9}>
-                        <h2 class="text-center text-white" data-aos="zoom-in-down" data-aos-duration="3000">
-                            <span>Dash</span><span className='heading'> Board</span></h2>
+                        <h2 class="text-center text-white">
+                            <span className='heading'>Dash</span>Board</h2>
                         <Tab.Content>
                             <Tab.Pane eventKey="dash">
                                 <Dashboard />

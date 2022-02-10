@@ -12,13 +12,15 @@
     background-image: url(../../../../Images/pageA.jpg);
 }
 .purchase-bg input, textarea{
-    color: aliceblue;
+    color: rgb(250, 155, 14);
+    /* color: aliceblue; */
     border: 2px solid rgb(184, 137, 10);
     padding: 5px 10px;
     font-size: 20px;
     margin-top: 5px;
     width: 300px;
     border-radius: 5px;
-    background: rgba(41, 38, 66, 0.603);
+    background-color: rgba(2, 4, 15, 0.918);
+    /* background: rgba(41, 38, 66, 0.603); */
 
 }

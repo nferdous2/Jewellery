@@ -10,9 +10,9 @@ const AllProductsNav = () => {
                     <Container>
                         <Navbar.Toggle />
                         <Navbar.Collapse className=" justify-content-start">
-                            <Nav.Link as={Link} to="/gold" ><p className=" nav-link fs-5 fw-bold text-decoration-none">Gold Jewellery</p></Nav.Link>
-                            <Nav.Link as={Link} to="/diamond"><p className="nav-link fs-5 fw-bold text-decoration-none">Diamond Jewellery</p></Nav.Link>
-                            <Nav.Link as={Link} to="/others"><p className="nav-link fs-5 fw-bold text-decoration-none">Stone Jewellery</p></Nav.Link>
+                            <Nav.Link as={Link} to="/gold" ><p className=" nav-link fs-5 fw-bold text-decoration-none">Gold <span className="text-white">Jewellery</span></p></Nav.Link>
+                            <Nav.Link as={Link} to="/diamond"><p className="nav-link fs-5 fw-bold text-decoration-none">Diamond <span className="text-white">Jewellery</span></p></Nav.Link>
+                            <Nav.Link as={Link} to="/others"><p className="nav-link fs-5 fw-bold text-decoration-none">Stone <span className="text-white">Jewellery</span></p></Nav.Link>
 
                         </Navbar.Collapse>
                     </Container>

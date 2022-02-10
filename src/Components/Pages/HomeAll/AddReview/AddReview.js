@@ -23,10 +23,10 @@ const AddReview = () => {
             <form className='purchase-bg text-white' onSubmit={handleSubmit(onSubmit)} >
                 <h2 data-aos="zoom-in-up" data-aos-duration="1200"><span className='heading'>We</span> Value <span className='heading'>Your </span>Opinion</h2> <span className="iconsS"><FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
                 </span>
-                <input {...register("img")} placeholder="Img Url" required data-aos="zoom-in-up" data-aos-duration="3000" />
-                <input {...register("name", { required: true, maxLength: 20 })} placeholder='Name' required data-aos="zoom-in-up" data-aos-duration="3000" />
-                <input {...register("opinion")} placeholder="Opinion" required data-aos="zoom-in-up" data-aos-duration="3000" />
-                <input type="submit" value='Add Review' className='btn btn-allP m-2' data-aos="zoom-in-up" data-aos-duration="3000" />
+                <input className='aa' {...register("img")} placeholder="Img Url" required />
+                <input {...register("name", { required: true, maxLength: 20 })} placeholder='Name' required />
+                <input {...register("opinion")} placeholder="Opinion" required />
+                <input type="submit" value='Add Review' className='btn btn-allP m-2' />
             </form>
         </div>
     );

@@ -19,15 +19,13 @@ const Home = () => {
             {/* post banner */}
             <section className="banner-section banner-f mt-4 ">
                 <h3 className='text-white text-center m-3'><span className='heading'>R</span>ecent <span className='heading'>O</span>ffers</h3>
-                <CardGroup xs={1} md={3} className="g-4 p-3" data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500">
+                <CardGroup xs={1} md={3} className="g-4 p-3">
                     <Card className="bannerPart">
                         <Card.Body className="bannerBody ">
                             <Card.Img variant="top" className='bannerBodyImg' src={b3} />
                             <Card.Text className="banner-inside fs-6 text-white">
-                                <h3>New Design</h3>
-                                <h4>Small design Rings</h4>
+                                <h3 className="banner-insideH3">New Design</h3>
+                                <h4 className="banner-insideH3">Small design Rings</h4>
                                 <span>Sale 40% </span>
                             </Card.Text>
                         </Card.Body>
@@ -36,8 +34,8 @@ const Home = () => {
                         <Card.Body className="bannerBody">
                             <Card.Img variant="top" className='bannerBodyImg' src={b5} />
                             <Card.Text className="banner-inside fs-6 text-white">
-                                <h3>Bestselling necklace</h3>
-                                <h4>White gold necklace</h4>
+                                <h3 className="banner-insideH3">Bestselling necklace</h3>
+                                <h4 className="banner-insideH3">White gold necklace</h4>
                                 <span>Sale 10% </span>
                             </Card.Text>
                         </Card.Body>
@@ -46,8 +44,8 @@ const Home = () => {
                         <Card.Body className="bannerBody">
                             <Card.Img variant="top" className='bannerBodyImg' src={b6} />
                             <Card.Text className="banner-inside fs-6 text-white">
-                                <h3>Featured Necklace</h3>
-                                <h4>Platinium Rings</h4>
+                                <h3 className="banner-insideH3">Featured Necklace</h3>
+                                <h4 className="banner-insideH3">Platinium Rings</h4>
                                 <span>Sale 30% </span>
                             </Card.Text>
                         </Card.Body>

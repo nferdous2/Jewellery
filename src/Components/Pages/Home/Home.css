@@ -49,6 +49,7 @@
     transition: 0.4s;
     opacity: 0.8;
      width: 75%;
+     border-radius: 10px;
    }
    .bannerBody:hover .bannerBodyImg{
     opacity: 0.5;
@@ -62,14 +63,19 @@
    .banner-inside {
      position: relative;
      top: 25px;
-     left: 15px;
+     left:13%;
+     width: 73%;
+   }
+   .banner-insideH3{
+     border-radius: 10px 30px;
+     background-color: rgba(245, 245, 245, 0.733);
    }
   .bannerPart{
     height: 620%;
     background-color: rgb(24, 23, 23);
   }
   .colorText{
-   color: goldenrod;
+   color: rgb(236, 186, 58);
  }
  .text{
    color: rgb(166, 247, 247);

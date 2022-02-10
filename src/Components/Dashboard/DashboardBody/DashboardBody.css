@@ -1,5 +1,5 @@
 .payment-container {
-    color: aliceblue;
+    color: rgb(255, 230, 242);
     text-align: center;
  margin-top: 10%;
     margin-bottom: 28%;
@@ -9,7 +9,11 @@
     margin-bottom: 30%;
 }
 .dash-container{
-    background-color: rgb(23, 26, 25);
+    background-color: rgba(10, 10, 10, 0.979);
+}
+.dash-Items:hover{
+   color: black;
+   background-color: rgba(252, 151, 36, 0.863);;
 }
 .iconsS{
     color: rgb(226, 132, 25);

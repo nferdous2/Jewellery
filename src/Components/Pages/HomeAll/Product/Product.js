@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 
 const Product = ({ product }) => {
     const { name, pic, price, _id } = product
+
+
     return (
 
         <div className="container  text-white p-3">

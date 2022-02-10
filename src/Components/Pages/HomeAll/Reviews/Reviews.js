@@ -5,9 +5,7 @@ const Reviews = ({ review }) => {
     return (
         <div>
             <Col className="services">
-                <Card className="service-style" data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine" data-aos-duration="2000">
+                <Card className="service-style">
                     <Card.Img className='collection-img mb-3 w-75 rounded-circle' variant="top" src={img} />
                     <Card.Body className='infos text-white'>
                         <Card.Title className='infos-Text' >{name}</Card.Title>
