@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 const Orders = ({ order }) => {
-    // const [orders, setProduct] = useState([]);
     const [orders, setOrders] = useState([])
 
     const { name, price, address, phone, email, productId } = order;

@@ -26,6 +26,15 @@ const AddReview = () => {
                 <input className='aa' {...register("img")} placeholder="Img Url" required />
                 <input {...register("name", { required: true, maxLength: 20 })} placeholder='Name' required />
                 <input {...register("opinion")} placeholder="Opinion" required />
+                <select {...register("rating")} className="reviews">
+                    <option value="">Rating</option>
+                    <option value="1">1</option>
+                    <option value="2"> 2</option>
+                    <option value="3"> 3</option>
+                    <option value="4"> 4</option>
+                    <option value="5"> 5</option>
+                </select>
+                {/* <input type="number" {...register("rating", { min: 0, max: 5 })} placeholder="Rating 1-5 Only" required /> */}
                 <input type="submit" value='Add Review' className='btn btn-allP m-2' />
             </form>
         </div>

@@ -77,7 +77,7 @@ const RegPage = () => {
                                 className="form-control mb-3 p-2"
                                 type="password"
                                 name="password"
-                                placeholder="Enter your Password"
+                                placeholder="Enter at least 6 digits"
                             />
                             <input
                                 className="btn btn-allP mt-3"

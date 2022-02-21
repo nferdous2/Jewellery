@@ -5,7 +5,8 @@
     margin-bottom: 0;
     border: 2px solid #a8741a;;
     height: 95%; 
-    background-color: rgba(14, 2, 12, 0.952);
+    background-color: rgba(8, 1, 8, 0.952);
+    /* background-color: rgba(14, 2, 12, 0.952); */
 }
 .heading{
     color:#da9a2d;
@@ -43,4 +44,11 @@ margin-bottom: 2%;
 /* Orders page  texts style */
 .order-text{
     font-size: small;
+}
+.icon-color{
+    color: gold;
+}
+.emptyIcon{
+color: rgb(170, 170, 170);
+
 }
