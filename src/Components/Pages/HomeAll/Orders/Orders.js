@@ -8,7 +8,7 @@ const Orders = ({ order }) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to delete order?')
         if (proceed) {
-            fetch(`https://glacial-refuge-18418.herokuapp.com/orders/${id}`, {
+            fetch(`https://jewellery-server.onrender.com/orders/${id}`, {
                 method: 'DELETE'
             }).then(res => res.json())
                 .then(data => {
@@ -21,7 +21,7 @@ const Orders = ({ order }) => {
         }
     }
     return (
-        <Col>
+        <Col className="w-50 col-md-3">
             <Card className="mb-4 p-2 " data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">

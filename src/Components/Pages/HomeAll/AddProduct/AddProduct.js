@@ -8,7 +8,7 @@ const AddProduct = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('https://glacial-refuge-18418.herokuapp.com/products', data)
+        axios.post('https://jewellery-server.onrender.com/products', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Product added successfully');

@@ -53,7 +53,7 @@ const Home = () => {
                 </CardGroup>
             </section>
             {/* Facility */}
-            <Facility />
+            {/* <Facility /> */}
             {/* products */}
             <Products />
             {/* advertise */}

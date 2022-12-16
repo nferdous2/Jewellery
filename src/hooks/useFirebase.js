@@ -60,7 +60,7 @@ const useFirebase = () => {
     }
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
-        fetch('https://glacial-refuge-18418.herokuapp.com/users', {
+        fetch('https://jewellery-server.onrender.com/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
