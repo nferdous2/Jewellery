@@ -4,7 +4,6 @@ import b3 from '../../../Images/b3.png';
 import b5 from '../../../Images/b-5.jpg';
 import b6 from '../../../Images/b6.png';
 import b9 from '../../../Images/b9.jpg';
-import Facility from '../HomeAll/Facility/Facility';
 import Deals from '../HomeAll/Deals/Deals';
 import './Home.css';
 import { Card, CardGroup } from 'react-bootstrap';
