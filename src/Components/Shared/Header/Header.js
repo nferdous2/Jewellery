@@ -17,16 +17,18 @@ const Header = () => {
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link className='navA' as={Link} to="/home"><p className="nav-link fs-5 fw-bold text-decoration-none">Home</p></Nav.Link>
                         <Nav.Link className='navA' as={Link} to="/allProducts"><p className="nav-link fs-5 fw-bold text-decoration-none">Products</p></Nav.Link>
-                        <Nav.Link className='navA' as={Link} to="/myOrder"><p className="nav-link fs-5 fw-bold text-decoration-none">My Order</p></Nav.Link>
+                        <Nav.Link className='navA' as={Link} to="/"><p className="nav-link fs-5 fw-bold text-decoration-none">Contact Us</p></Nav.Link>
                         {user?.email ?
                             <Nav>
-                                <Nav.Link className='navA' as={Link} to="/dashboard"><p style={{ color: '#b3760f' }} className="nav-link fs-5 fw-bold text-decoration-none">Dashboard</p></Nav.Link>
+                                <Nav.Link className='navA' as={Link} to="/dashboard"><p className="nav-linkL fs-5 fw-bold text-decoration-none">Dashboard</p></Nav.Link>
                                 <Nav.Link className='navA' onClick={logOut} ><p className="nav-linkL fs-5 fw-bold text-decoration-none" >Logout</p></Nav.Link>
 
                             </Nav> :
-                            <Link className='navA' to="/login">
-                                <p className="nav-link fs-5 fw-bold text-decoration-none">LogIn</p>
-                            </Link>
+                            <Nav>
+                            <Nav.Link className='navA' as={Link} to="/login"><p className="nav-linkL fs-5 fw-bold text-decoration-none">Login</p></Nav.Link>
+
+                            </Nav>
+                          
                         }
 
                     </Navbar.Collapse>

@@ -3,7 +3,7 @@
     font-weight: 100;
 }
 .navbar-style{
-    background-color: rgba(1, 10, 15, 0.63);
+    background-color: rgba(1, 10, 15, 0.977);
     font-family:cursive;
      font-weight: 600;
     padding: 3px;
@@ -11,7 +11,7 @@
 
 }
 .navs{
-    color: rgb(206, 125, 3);
+    color: rgb(245, 162, 38);
 
 }
 .navs-h{
@@ -20,12 +20,14 @@ color: #e7e5e2;
 }
 
 .nav-link{
-    color: #b3760f;
+       color: rgb(245, 162, 38);
     border: none;
     outline: none;
-} 
+    position: relative;
+    
+}  
 .nav-linkL{
-    color: #b3760f;
+    color: #fdb230;
     border: none;
     outline: none;
 } 
@@ -36,13 +38,6 @@ color: #e7e5e2;
 .nav-link:hover{
     color: #fcdef4;;
 } 
-.navA{
-    color: #b3760f;
- margin: 5px 5px;
-    border: none;
-    outline: none;
-    position: relative;
-} 
 
 .navA:after {
   content: '';
@@ -52,7 +47,7 @@ color: #e7e5e2;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #db9003;
+  background-color: #faaf25;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

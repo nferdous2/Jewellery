@@ -1,7 +1,7 @@
 .footer{
     font-family:cursive;
-color: rgb(207, 155, 10);
-background-color: rgba(1, 5, 10, 0.76);
+color: rgb(245, 162, 38);
+background-color: rgb(1, 5, 10);
 }
 
 .list{
@@ -14,7 +14,7 @@ background-color: rgba(1, 5, 10, 0.76);
 
 }
 .list:hover{
-    color: rgb(207, 155, 10);
+    color: rgb(245, 162, 38);
     font-weight: 700;
    opacity: 1;
 }
@@ -23,7 +23,7 @@ background-color: rgba(1, 5, 10, 0.76);
     align-items: center;
     margin-left:13%;
     padding: 4px;
-    color: #d19004;
+    color:rgb(245, 162, 38);
     font-size: 35px;
 }
 .icons:hover{

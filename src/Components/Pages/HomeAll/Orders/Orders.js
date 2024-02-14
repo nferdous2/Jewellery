@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 const Orders = ({ order }) => {
-    const [orders, setOrders] = useState([])
-
+const [orders,setOrders]= useState();
     const { name, price, address, phone, email, productId } = order;
     //DELETE A product
     const handleDelete = id => {
@@ -21,8 +20,8 @@ const Orders = ({ order }) => {
         }
     }
     return (
-        <Col className="w-50 col-md-3">
-            <Card className="mb-4 p-2 " data-aos="flip-left"
+        <Col className="col-md-4 mb-5">
+            <Card className="mb-4 p-2 h-100" data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
 

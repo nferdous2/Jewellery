@@ -3,7 +3,7 @@ import DashboardHome from '../DashboardHome/DashboardHome';
 import './DashboardBody.css'
 const DashboardBody = () => {
     return (
-        <div className='dash-container mb-2 p-2'>
+        <div style={{overflow:"hidden"}}>
             <DashboardHome />
         </div>
     );

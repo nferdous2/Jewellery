@@ -6,6 +6,7 @@ import './PurchasePage.css';
 const PurchasePage = () => {
     const [product, setProduct] = useState([]);
     const { serviceId } = useParams();
+
     useEffect(() => {
         fetch(`https://jewellery-server.onrender.com/orders/${serviceId}`)
             .then(res => res.json())
@@ -17,8 +18,11 @@ const PurchasePage = () => {
         axios.post('https://jewellery-server.onrender.com/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
-                    alert('Added successfully')
+                    alert('Order place successfully,Go to Dashboard to check your order')
                     reset()
+                    window.location.href = 'https://jewellery1-5636e.web.app/'
+
+
                 }
             })
         console.log(data);

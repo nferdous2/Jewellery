@@ -11,7 +11,7 @@
     color: rgb(190, 124, 24);
     background-image: url(../../../../Images/pageA.jpg);
 }
-.purchase-bg input, textarea{
+.purchase-bg input, textarea,select{
     color: rgb(250, 155, 14);
     /* color: aliceblue; */
     border: 2px solid rgb(184, 137, 10);

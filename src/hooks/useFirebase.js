@@ -1,4 +1,4 @@
-import { getAuth, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { getAuth, signOut,  signInWithPopup,onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, GoogleAuthProvider } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from './../Firebase/firebase.init';
 
@@ -9,6 +9,20 @@ const useFirebase = () => {
     const [error, setError] = useState("");
     const auth = getAuth();
 
+    const signInWithGoogle = () => {
+        const googleProvider = new GoogleAuthProvider();
+        console.log('Signing in with Google...');
+        signInWithPopup(auth, googleProvider)
+            .then(result => {
+                setUser(result.user);
+                window.alert('Successfully loggedin!');
+
+                window.location.href = 'https://jewellery1-5636e.web.app/'
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }
     //Registration part handle
     const handleRegister = (email, password, name, history) => {
         createUserWithEmailAndPassword(auth, email, password)
@@ -22,7 +36,9 @@ const useFirebase = () => {
                 })
                     .then(() => { }).catch((error) => {
                     });
-                history.replace('/');
+                    window.alert('Registration successful!');
+
+                    window.location.href = 'https://jewellery1-5636e.web.app/'
             })
             .catch((error) => {
                 setError(error.message);
@@ -35,6 +51,8 @@ const useFirebase = () => {
             .then((userCredential) => {
                 const destination = location?.state?.from || '/';
                 history.replace(destination);
+                window.alert('Login successful!');
+
                 setError('');
             })
             .catch((error) => {
@@ -53,11 +71,19 @@ const useFirebase = () => {
         });
         return () => unsubscribed;
     }, [])
-    //log out button
     const logOut = () => {
         signOut(auth)
-            .then(() => { })
-    }
+          .then(() => {
+            // Reload the window after successful logout
+            window.location.reload();
+            window.location.href = 'https://jewellery1-5636e.web.app/'
+
+          })
+          .catch(error => {
+            // Handle any errors during logout
+            console.error('Error logging out:', error);
+          });
+      }
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
         fetch('https://jewellery-server.onrender.com/users', {
@@ -75,6 +101,8 @@ const useFirebase = () => {
         logOut,
         error,
         loginHandle,
+        signInWithGoogle,
+
     }
 }
 

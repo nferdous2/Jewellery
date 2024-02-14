@@ -4,9 +4,7 @@
     margin: 5px;
     margin-bottom: 0;
     border: 2px solid #a8741a;;
-    height: 95%; 
     background-color: rgba(8, 1, 8, 0.952);
-    /* background-color: rgba(14, 2, 12, 0.952); */
 }
 .heading{
     color:#da9a2d;
@@ -14,9 +12,9 @@
     font-weight: 900;
 }
 .collection-img{
-    width: 80%;
-    height: 55%;
-    margin-left: 10%;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
 }
 .services{
     overflow: hidden;
@@ -35,12 +33,12 @@ margin-bottom: 2%;
     color: aliceblue;
 }
 .btn-allP{
-
     margin-left: 3%;
     margin-bottom: 5%;
     background-color: #da9a2d;
     color: rgb(4, 35, 61);
 }
+
 /* Orders page  texts style */
 .order-text{
     font-size: small;

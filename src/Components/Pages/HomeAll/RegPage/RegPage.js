@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import { Alert, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import useAuth from "../../../../hooks/useAuth";
 import "./RegPage.css";
+import google from '../../../../Images/Google.png'
+
 const RegPage = () => {
+
   const [loginData, setLoginData] = useState({});
-  const { handleRegister } = useAuth();
+  const { handleRegister, signInWithGoogle } = useAuth();
   const location = useLocation();
   const history = useHistory();
   const handleSubmit = (e) => {
@@ -22,12 +25,7 @@ const RegPage = () => {
   };
   return (
     <div className="reg-bg p-2" xs={1} md={3}>
-      <Card
-        style={{ width: "23rem" }}
-        xs={1}
-        md={3}
-        className=" login-page  mb-4"
-      >
+      <Card className=" login-page  mb-4 col-lg-4 col-md-4 mb-4">
         <Card.Body>
           <Card.Text>
             <form onSubmit={handleSubmit} className="form-container">
@@ -90,25 +88,31 @@ const RegPage = () => {
                 name="password"
                 placeholder="Enter at least 6 digits"
               />
-              {/* <div class="alert alert-warning " role="alert">
-                Password must contain at least 6 digit
-              </div> */}
+
               <input
-                className="btn btn-allP mt-3"
+                className="btn btn-allP mt-3 w-100 fw-bold text-white"
                 type="submit"
                 value="Register"
               />
             </form>
             <div
-              className="form-footer p-2 mb-3"
+              className="p-2 mb-3"
               data-aos="fade-left"
               data-aos-anchor="#example-anchor"
               data-aos-offset="500"
               data-aos-duration="3000"
+              style={{ color: 'white', textDecoration: "none" }}
             >
-              <p>Already have an account?</p>
-              <Link to="/register">
-                <h5 className="text-white text-decoration none">
+              <h5 style={{ color: "#a8741a" }}>OR</h5>
+              <Card.Title>
+                <h5 className='text-center text-decoration-none font-weight-bold mb-2' style={{ color: 'white ' }}>SignUp With Google</h5>
+              </Card.Title>
+              <Card.Text className=" d-flex align-items-center">
+                <img onClick={signInWithGoogle} src={google} alt="" className="w-25 p-2 m-auto" />
+              </Card.Text>
+              <h5>Already have an account?</h5>
+              <Link to="/login" style={{ color: 'white', textDecoration: "none" }}>
+                <h5>
                   Please,Login
                 </h5>
               </Link>

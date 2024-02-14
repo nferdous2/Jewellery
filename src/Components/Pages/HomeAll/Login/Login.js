@@ -3,9 +3,10 @@ import { Alert, Card } from "react-bootstrap";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import useAuth from "../../../../hooks/useAuth";
 import "./Login.css";
+import google from '../../../../Images/Google.png'
 
 const Login = () => {
-  const { user, loginHandle } = useAuth();
+  const { user, loginHandle,signInWithGoogle } = useAuth();
   const [loginData, setLoginData] = useState({});
   const location = useLocation();
   const history = useHistory();
@@ -22,13 +23,8 @@ const Login = () => {
     setLoginData(newLoginData);
   };
   return (
-    <div className="login-bg p-2" xs={1} md={3}>
-      <Card
-        style={{ width: "23rem" }}
-        xs={1}
-        md={3}
-        className="login-page mb-5 mt-4"
-      >
+    <div className="login-bg p-2 " >
+      <Card className="login-page mb-5 mt-4 col-lg-4 col-md-4 mb-4">
         <Card.Body>
           <Card.Text>
             <h2
@@ -75,7 +71,7 @@ const Login = () => {
               <input
                 type="submit"
                 value="Login"
-                className="btn btn-all mt-3"
+                className="btn btn-allP mt-3 w-100 fw-bold text-white"
                 data-aos="fade-left"
                 data-aos-anchor="#example-anchor"
                 data-aos-offset="500"
@@ -91,6 +87,13 @@ const Login = () => {
                 data-aos-offset="500"
                 data-aos-duration="3000"
               >
+              <h5 style={{ color: "#a8741a" }}>OR</h5>
+              <Card.Title>
+                <h5 className='text-center text-decoration-none font-weight-bold mb-2' style={{ color: 'white ' }}>SignUp With Google</h5>
+              </Card.Title>
+              <Card.Text className=" d-flex align-items-center">
+                <img onClick={signInWithGoogle} src={google} alt="" className="w-25 p-2 m-auto" />
+              </Card.Text>
                 <p> Don't have an account?</p>
                 <Link to="/register" className="text-decoration-none">
                   <h5 className="text-white">Please, Register</h5>

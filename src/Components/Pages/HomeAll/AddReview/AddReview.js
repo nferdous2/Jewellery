@@ -14,13 +14,14 @@ const AddReview = () => {
                 if (res.data.insertedId) {
                     alert('Review added successfully');
                     reset();
+                    window.location.href = 'https://jewellery1-5636e.web.app/'
                 }
             })
     }
 
     return (
         <div id="addReview">
-            <form className='purchase-bg text-white' onSubmit={handleSubmit(onSubmit)} >
+            <form className='purchase-bg text-white h-100' onSubmit={handleSubmit(onSubmit)} >
                 <h2 data-aos="zoom-in-up" data-aos-duration="1200"><span className='heading'>We</span> Value <span className='heading'>Your </span>Opinion</h2> <span className="iconsS"><FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
                 </span>
                 <input className='aa' {...register("img")} placeholder="Img Url" required />
@@ -34,7 +35,6 @@ const AddReview = () => {
                     <option value="4"> 4</option>
                     <option value="5"> 5</option>
                 </select>
-                {/* <input type="number" {...register("rating", { min: 0, max: 5 })} placeholder="Rating 1-5 Only" required /> */}
                 <input type="submit" value='Add Review' className='btn btn-allP m-2' />
             </form>
         </div>

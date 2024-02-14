@@ -1,8 +1,13 @@
 import React from 'react';
+
 import { Card } from 'react-bootstrap';
+
 import banner from '../../../Images/banner.jpg';
+
 import './Banner.css'
+
 const Banner = () => {
+
     return (
         <Card className="banner-bg  text-white p-2">
             <Card.Img xs={1} sm={12} md={4} src={banner} alt="" className='h-75' />

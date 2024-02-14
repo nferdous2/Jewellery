@@ -13,18 +13,25 @@ const Products = () => {
     }, [])
     return (
         <div>
-            <h2 className='m-3 text-center p-2 text-white'><span className='heading'>O</span>ur <span className='heading'>C</span>ollections</h2>
-            <Row xs={1} md={3} className=" gx-4 gy-5 pt-3 px-5 ">
+<div className="d-flex flex-column align-items-center justify-content-center text-center">
+  <div className="d-flex justify-content-center">
+    <h2 className='m-3 p-2 text-white'><span className='heading'>O</span>ur <span className='heading'>C</span>ollections</h2>
+    <Link to="/allProducts" className="text-decoration-none ms-3 mt-4">
+      <button type="submit" className="btn btn-all">
+        See All Products
+      </button>
+    </Link>
+  </div>
+</div>
+
+
+            <Row xs={1} md={3}>
                 {
                     products.map(product => <Product product={product}
                     ></Product>)
                 }
             </Row>
-            <Link to="/allProducts" >
-                <button type="submit" className="btn btn-all">
-                    See All product
-                </button>
-            </Link>
+           
         </div>
     );
 };

@@ -1,25 +1,30 @@
 .payment-container {
-    color: rgb(255, 230, 242);
-    text-align: center;
- margin-top: 10%;
-    margin-bottom: 28%;
+  color: rgb(11, 6, 8);
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
-.dash-nav{
-    margin-top: 10%;
-    margin-bottom: 30%;
+.dash-nav {
+  margin-top: 25%;
+  height: 250px;
+  /* margin-bottom: 30%; */
 }
-.dash-container{
-    background-color: rgba(10, 10, 10, 0.979);
+.dash-Items:hover {
+  color: black;
+  background-color: rgba(252, 151, 36, 0.863);
 }
-.dash-Items:hover{
-   color: black;
-   background-color: rgba(252, 151, 36, 0.863);;
+.dash-Items {
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(248, 156, 51);
 }
-.iconsS{
-    color: rgb(226, 132, 25);
-    justify-content: center;
-    margin:auto;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 30px;
+.iconsS {
+  color: rgb(226, 132, 25);
+  justify-content: center;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 30px;
 }
