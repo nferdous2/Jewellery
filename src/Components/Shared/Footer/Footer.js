@@ -7,15 +7,22 @@ import { faHeart, faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import "./Footer.css";
-import axios from "axios";
 const Footer = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    axios
-      .get("https://api.countapi.xyz/hit/jewellery/visits")
-      .then((response) => setCount(response.data.value))
-      .catch((error) => console.log(error));
+    // Retrieve the count from local storage
+    const visitCount = localStorage.getItem("visitCount");
+    if (visitCount) {
+      setCount(parseInt(visitCount));
+    }
+    
+    // Increment the count and save it to local storage
+    setCount(prevCount => {
+      const newCount = prevCount + 1;
+      localStorage.setItem("visitCount", newCount);
+      return newCount;
+    });
   }, []);
 
   return (
@@ -23,7 +30,7 @@ const Footer = () => {
       <div className="row" data-aos="zoom-in-down" data-aos-duration="3000">
         <div className="col-md-3">
           <h3 className="text-uppercase">NF Jewellery</h3>
-          <p className="text-white">Every pice of jewellery tells a story</p>
+          <p className="text-white">Every piece of jewellery tells a story</p>
           <p className="mt-5">
             <h5 className="text-uppercase">
               <i className="fas fa-search-location me-2"></i>Our Office

@@ -3,16 +3,16 @@ import MyOrder from '../../Pages/HomeAll/MyOrder/MyOrder';
 import AddReview from '../../Pages/HomeAll/AddReview/AddReview';
 import { Col, Nav, Row, Tab } from 'react-bootstrap';
 import Payment from '../Payment/Payment';
-import Dashboard from '../Dashboard/Dashboard';
+// import Dashboard from '../Dashboard/Dashboard';
 import "../DashboardBody/DashboardBody.css"
 const DashboardHome = () => {
     return (
-            <Tab.Container id="left-tabs-example" defaultActiveKey="dash">
+            <Tab.Container id="left-tabs-example" defaultActiveKey="myOrders">
                 <Row>
                     <Col sm={3} style={{ backgroundColor: "rgba(10, 10, 10, 0.979)" }}>
                         <Nav className="dash-nav flex-column">
                             <Nav.Item>
-                                <Nav.Link className="dash-Items" eventKey="dash">DashBoard</Nav.Link>
+                                <Nav.Link className="dash-Items">DashBoard</Nav.Link>
                             </Nav.Item>
 
                             <Nav.Item>
@@ -28,10 +28,9 @@ const DashboardHome = () => {
                     </Col>
                     <Col sm={9}>
                         <Tab.Content>
-                            <Tab.Pane eventKey="dash">
+                            {/* <Tab.Pane eventKey="dash">
                                 <Dashboard />
-                            </Tab.Pane>
-
+                            </Tab.Pane> */}
                             <Tab.Pane eventKey="myOrders">
                                 <MyOrder />
                             </Tab.Pane>

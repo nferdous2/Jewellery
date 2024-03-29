@@ -4,7 +4,7 @@ import Orders from '../Orders/Orders';
 const MyOrder = () => {
     const [orders, setOrders] = useState([])
     useEffect(() => {
-        fetch('https://jewellery-server.onrender.com/orders')
+        fetch('https://jewellery-server-two.vercel.app/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     })

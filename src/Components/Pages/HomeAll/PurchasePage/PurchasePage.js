@@ -8,14 +8,14 @@ const PurchasePage = () => {
     const { serviceId } = useParams();
 
     useEffect(() => {
-        fetch(`https://jewellery-server.onrender.com/orders/${serviceId}`)
+        fetch(`https://jewellery-server-two.vercel.app/orders/${serviceId}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [serviceId])
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('https://jewellery-server.onrender.com/orders', data)
+        axios.post('https://jewellery-server-two.vercel.app/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Order place successfully,Go to Dashboard to check your order')
