@@ -9,7 +9,7 @@ const AddReview = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('https://jewellery-server-two.vercel.app/review', data)
+        axios.post('https://jewellery-server-roan.vercel.app/review', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Review added successfully');

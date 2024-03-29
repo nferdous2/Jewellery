@@ -86,7 +86,7 @@ const useFirebase = () => {
       }
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
-        fetch('https://jewellery-server-two.vercel.app/users', {
+        fetch('https://jewellery-server-roan.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

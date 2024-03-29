@@ -7,7 +7,7 @@ const [orders,setOrders]= useState();
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to delete order?')
         if (proceed) {
-            fetch(`https://jewellery-server-two.vercel.app/orders/${id}`, {
+            fetch(`https://jewellery-server-roan.vercel.app/orders/${id}`, {
                 method: 'DELETE'
             }).then(res => res.json())
                 .then(data => {
