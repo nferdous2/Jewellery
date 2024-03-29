@@ -17,6 +17,7 @@ import Login from './Components/Pages/HomeAll/Login/Login';
 import DashboardBody from './Components/Dashboard/DashboardBody/DashboardBody';
 import AuthProvider from './Contexts/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Cart from './Components/Pages/HomeAll/Cart';
 function App() {
   return (
 
@@ -34,6 +35,9 @@ function App() {
             <Route path="/allProducts">
               <AllProduct />
             </Route>
+            <PrivateRoute path="/cart">
+              <Cart />
+            </PrivateRoute>
             <PrivateRoute path="/myOrder">
               <MyOrder />
             </PrivateRoute>

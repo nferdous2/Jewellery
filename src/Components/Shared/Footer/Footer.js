@@ -110,7 +110,7 @@ const Footer = () => {
             <FontAwesomeIcon
               style={{ color: "red" }}
               icon={faHeart}
-            ></FontAwesomeIcon>{" "}
+            ></FontAwesomeIcon>
             {count} people visited this site
           </p>
         </div>

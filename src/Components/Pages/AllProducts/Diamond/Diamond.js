@@ -7,7 +7,7 @@ import Product from '../../HomeAll/Product/Product';
 const Diamond = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('https://jewellery-server-roan.vercel.app/diamond')
+        fetch('https://jewellery-server.onrender.com/diamond')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])

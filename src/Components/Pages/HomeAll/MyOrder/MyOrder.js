@@ -4,14 +4,14 @@ import Orders from '../Orders/Orders';
 const MyOrder = () => {
     const [orders, setOrders] = useState([])
     useEffect(() => {
-        fetch('https://jewellery-server-roan.vercel.app/orders')
+        fetch('https://jewellery-server.onrender.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     })
 
     return (
         <div id="myOrder">
-            <h2 className='text-center'><span className="heading">Your</span> Orders</h2>
+            <h2 className='text-center mt-5'><span className="heading">Your</span> Orders</h2>
             <Row xs={1} sm={12} md={4} className="gx-4 text-white gy-5 px-5">
                 {
 
